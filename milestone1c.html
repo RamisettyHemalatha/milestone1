@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <h2 align="center"><u>DATA TYPES</u></h2>
+    <body align="center" style="background-color: grey;">
+        <script>
+            function testVariable(v){
+                if(typeof v=="string"){
+                    document.write('String'+"<br><br>");
+                }
+                else if(typeof v=="number"){
+                    document.write('Number'+"<br><br>");
+                }
+                else if(typeof v=="bigint"){
+                    document.write('BigInt'+"<br><br>");
+                }
+                else if(typeof v=="boolean"){
+                    document.write('Boolean'+"<br><br>");
+                }
+                else if(typeof v=="undefined"){
+                    document.write('Undefined'+"<br><br>");
+                }
+                else if(typeof v=="symbol"){
+                    document.write('Symbol'+"<br><br>");
+                }
+                else if(typeof v=="object"){
+                    document.write('Object'+"<br><br>");
+                }
+                else{
+                    document.write('Null'+"<br><br>");
+                }
+            }
+            const a='Hello';//String
+            const b=3;//Number
+            const c=5555555555555555555555555555n;//BigInt
+            const d=true;//Boolean
+            let e=undefined;//undefined
+            const f=null;//null
+            const g=Symbol('hello');//Symbol
+            const h={
+                x:'hello',y:null,z:10
+            };//Object
+            testVariable(a);
+            testVariable(b);
+            testVariable(c);
+            testVariable(d);
+            testVariable(e);
+            testVariable(f);
+            testVariable(g);
+
+        </script>
+    </body>
+</html>

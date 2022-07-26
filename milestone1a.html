@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h3 align="center"><u>MATCHED or NOT??</u></h3>
+    </head>
+<body align="center" style="background-color: lightgreen;">
+    <label for="num">User Input:</label>
+<input id="num" value="">
+<button onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+    let d=document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 10) + 1;
+function myFunction() {
+  let s;
+  let n = Number(document.getElementById("num").value);
+  if(n==d){
+    s = "Matched";
+  }else{
+    s="Not matched";
+  }
+  document.getElementById("demo").innerHTML = s;
+}
+</script>
+</body>
+</html>
